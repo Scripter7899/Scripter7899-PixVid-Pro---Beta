@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - PixVid Pro</title>
+    <link rel="stylesheet" href="styles.css?v=13.0&t=1731055500">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+</head>
+<body class="legal-page-body">
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <nav class="top-nav">
+                <div class="logo">🎬 PixVid Pro</div>
+                <div class="nav-buttons">
+                    <a href="index.html" class="nav-btn">🏠 Home</a>
+                    <a href="index.html#generator" class="nav-btn">🎥 Generator</a>
+                    <a href="index.html#gallery" class="nav-btn">🌍 World Gallery</a>
+                    <a href="pricing.html" class="nav-btn">💎 Pricing</a>
+                    <a href="contact.html" class="nav-btn">📞 Contact</a>
+                    <a href="about.html" class="nav-btn">ℹ️ About</a>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <main class="legal-page">
+        <div class="container">
+            <div class="legal-content">
+                <h1>Contact Us</h1>
+                
+                <section class="contact-section">
+                    <h2>Get in Touch</h2>
+                    <p>We're here to help! If you have any questions, feedback, or need support with PixVid Pro, please don't hesitate to reach out to us.</p>
+                </section>
+
+                <section class="contact-section">
+                    <h2>Support & Inquiries</h2>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <h3>📧 Email Support</h3>
+                            <p id="contact-email">Loading...</p>
+                            <p>We typically respond within 24 hours during business days.</p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h3>💬 What We Can Help With</h3>
+                            <ul>
+                                <li>Technical support and troubleshooting</li>
+                                <li>Account and billing questions</li>
+                                <li>Feature requests and feedback</li>
+                                <li>Business partnerships</li>
+                                <li>General inquiries about our service</li>
+                            </ul>
+                        </div>
+
+                        <div class="contact-item">
+                            <h3>🕒 Response Times</h3>
+                            <ul>
+                                <li><strong>General Inquiries:</strong> Within 24 hours</li>
+                                <li><strong>Technical Support:</strong> Within 12 hours</li>
+                                <li><strong>Billing Issues:</strong> Within 6 hours</li>
+                                <li><strong>Critical Issues:</strong> Within 2 hours</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="contact-section">
+                    <h2>Before You Contact Us</h2>
+                    <p>To help us assist you better, please:</p>
+                    <ul>
+                        <li>Check our <a href="pricing.html">Pricing</a> page for plan details</li>
+                        <li>Review our <a href="terms.html">Terms & Conditions</a> for service policies</li>
+                        <li>Include your account email (if applicable) in your message</li>
+                        <li>Provide detailed description of any technical issues</li>
+                    </ul>
+                </section>
+
+                <section class="contact-section">
+                    <h2>Business Hours</h2>
+                    <p>Our support team is available:</p>
+                    <ul>
+                        <li><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM (IST)</li>
+                        <li><strong>Saturday:</strong> 10:00 AM - 4:00 PM (IST)</li>
+                        <li><strong>Sunday:</strong> Closed (Emergency support only)</li>
+                    </ul>
+                    <p><em>Note: We monitor critical issues 24/7 and will respond to urgent matters outside business hours.</em></p>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PixVid Pro</h3>
+                    <p>AI-powered video generation</p>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="refund.html">Refund Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Load contact email from server
+        fetch('/api/contact-info')
+            .then(response => response.json())
+            .then(data => {
+                if (data.success && data.email) {
+                    document.getElementById('contact-email').innerHTML = `<a href="mailto:${data.email}">${data.email}</a>`;
+                } else {
+                    document.getElementById('contact-email').textContent = 'support@pixvidpro.com';
+                }
+            })
+            .catch(() => {
+                document.getElementById('contact-email').textContent = 'support@pixvidpro.com';
+            });
+    </script>
+</body>
+</html>

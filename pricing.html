@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - PixVid Pro</title>
+    <link rel="stylesheet" href="styles.css?v=13.0&t=1731055500">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+</head>
+<body class="legal-page-body">
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <nav class="top-nav">
+                <div class="logo">🎬 PixVid Pro</div>
+                <div class="nav-buttons">
+                    <a href="index.html" class="nav-btn">🏠 Home</a>
+                    <a href="index.html#generator" class="nav-btn">🎥 Generator</a>
+                    <a href="index.html#gallery" class="nav-btn">🌍 World Gallery</a>
+                    <a href="pricing.html" class="nav-btn">💎 Pricing</a>
+                    <a href="contact.html" class="nav-btn">📞 Contact</a>
+                    <a href="about.html" class="nav-btn">ℹ️ About</a>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <main class="pricing-page">
+        <div class="container">
+            <div class="pricing-header">
+                <h1>Choose Your Plan</h1>
+                <p>Select the perfect plan for your video creation needs</p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Pro Monthly -->
+                <div class="pricing-card">
+                    <div class="plan-name">Pro Monthly</div>
+                    <div class="plan-price" data-inr="₹479" data-usd="$6">₹479</div>
+                    <div class="plan-period">per month</div>
+                    <div class="plan-features">
+                        <div class="feature">✓ 50 video generations per month</div>
+                        <div class="feature">✓ HD quality exports</div>
+                        <div class="feature">✓ 5 custom templates</div>
+                        <div class="feature">✓ Basic editing tools</div>
+                        <div class="feature">✓ Email support</div>
+                        <div class="feature">✓ Watermark-free videos</div>
+                    </div>
+                    <button class="plan-btn primary" onclick="redirectToSignup('pro_monthly')">Choose Pro</button>
+                </div>
+
+                <!-- Pro+ Monthly -->
+                <div class="pricing-card popular">
+                    <div class="plan-name">Pro+ Monthly</div>
+                    <div class="plan-price" data-inr="₹829" data-usd="$10">₹829</div>
+                    <div class="plan-period">per month</div>
+                    <div class="plan-features">
+                        <div class="feature">✓ 150 video generations per month</div>
+                        <div class="feature">✓ 4K quality exports</div>
+                        <div class="feature">✓ 20 custom templates</div>
+                        <div class="feature">✓ Advanced editing suite</div>
+                        <div class="feature">✓ Priority support</div>
+                        <div class="feature">✓ Bulk export options</div>
+                        <div class="feature">✓ Advanced effects library</div>
+                    </div>
+                    <button class="plan-btn primary" onclick="redirectToSignup('pro_plus_monthly')">Choose Pro+</button>
+                </div>
+
+                <!-- Pro Annual -->
+                <div class="pricing-card">
+                    <div class="plan-name">Pro Annual</div>
+                    <div class="plan-price" data-inr="₹3,129" data-usd="$38">₹3,129</div>
+                    <div class="plan-period">per year <span style="color: #00E676; font-weight: bold;">Save 35%</span></div>
+                    <div class="plan-features">
+                        <div class="feature">✓ 50 video generations per month</div>
+                        <div class="feature">✓ HD quality exports</div>
+                        <div class="feature">✓ 10 custom templates</div>
+                        <div class="feature">✓ Advanced editing tools</div>
+                        <div class="feature">✓ Dedicated support</div>
+                        <div class="feature">✓ Watermark-free videos</div>
+                        <div class="feature">✓ Extended video library access</div>
+                        <div class="feature">✓ Collaboration features</div>
+                        <div class="feature">✓ Export to multiple formats</div>
+                    </div>
+                    <button class="plan-btn primary" onclick="redirectToSignup('pro_annual')">Best Value</button>
+                </div>
+
+                <!-- Pro+ Annual -->
+                <div class="pricing-card">
+                    <div class="plan-name">Pro+ Annual</div>
+                    <div class="plan-price" data-inr="₹5,979" data-usd="$72">₹5,979</div>
+                    <div class="plan-period">per year <span style="color: #00E676; font-weight: bold;">Save 40%</span></div>
+                    <div class="plan-features">
+                        <div class="feature">✓ 150 video generations per month</div>
+                        <div class="feature">✓ 4K quality exports</div>
+                        <div class="feature">✓ Unlimited custom templates</div>
+                        <div class="feature">✓ Professional editing suite</div>
+                        <div class="feature">✓ 24/7 priority support</div>
+                        <div class="feature">✓ Team collaboration tools</div>
+                        <div class="feature">✓ Advanced effects & transitions</div>
+                        <div class="feature">✓ White-label options</div>
+                        <div class="feature">✓ API access for developers</div>
+                        <div class="feature">✓ Premium stock content library</div>
+                    </div>
+                    <button class="plan-btn primary" onclick="redirectToSignup('pro_plus_annual')">Choose Pro+</button>
+                </div>
+            </div>
+
+            <div class="pricing-faq">
+                <h2>Frequently Asked Questions</h2>
+                
+                <div class="faq-item">
+                    <h3>What payment methods do you accept?</h3>
+                    <p>We accept all major credit cards, debit cards, and digital wallets through our secure payment gateway. International payments are supported.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Can I upgrade or downgrade my plan?</h3>
+                    <p>Yes, you can change your plan at any time. Upgrades take effect immediately, and for downgrades, changes will apply at the next billing cycle.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Is there a free trial?</h3>
+                    <p>We offer a limited free tier with basic features. You can start creating videos immediately after signing up with your Google account.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What happens if I exceed my monthly limit?</h3>
+                    <p>If you reach your monthly generation limit, you can upgrade your plan or wait until the next billing cycle. We'll notify you when you're approaching your limit.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Do you offer refunds?</h3>
+                    <p>Please refer to our <a href="refund.html">Refund Policy</a> for detailed information about our no-refund policy and the reasons behind it.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PixVid Pro</h3>
+                    <p>AI-powered video generation</p>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="refund.html">Refund Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Redirect to main app for signup
+        function redirectToSignup(planId) {
+            window.location.href = `index.html#pricing?plan=${planId}`;
+        }
+
+        // Update pricing display based on user location
+        function updatePricingDisplay() {
+            const isIndianUser = Intl.DateTimeFormat().resolvedOptions().timeZone.includes('Asia') || 
+                                 navigator.language.includes('hi') || 
+                                 navigator.language.includes('en-IN');
+            
+            const priceElements = document.querySelectorAll('.plan-price[data-inr][data-usd]');
+            
+            priceElements.forEach(element => {
+                const inrPrice = element.getAttribute('data-inr');
+                const usdPrice = element.getAttribute('data-usd');
+                element.textContent = isIndianUser ? inrPrice : usdPrice;
+            });
+        }
+
+        // Initialize pricing display
+        updatePricingDisplay();
+    </script>
+</body>
+</html>
